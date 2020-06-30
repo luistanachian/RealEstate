@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RealEstate.Business\RealEstate.Business.csproj" />
+    <ProjectReference Include="..\RealEstate.Dao\RealEstate.Dao.csproj" />
+    <ProjectReference Include="..\RealEstate.Repository\RealEstate.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

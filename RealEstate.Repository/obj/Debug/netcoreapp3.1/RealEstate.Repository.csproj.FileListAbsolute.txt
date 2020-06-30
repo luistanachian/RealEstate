@@ -1,0 +1,14 @@
+D:\RealEstate\RealEstate\RealEstate.Repository\bin\Debug\netcoreapp3.1\RealEstate.Repository.deps.json
+D:\RealEstate\RealEstate\RealEstate.Repository\bin\Debug\netcoreapp3.1\RealEstate.Repository.dll
+D:\RealEstate\RealEstate\RealEstate.Repository\bin\Debug\netcoreapp3.1\RealEstate.Repository.pdb
+D:\RealEstate\RealEstate\RealEstate.Repository\bin\Debug\netcoreapp3.1\RealEstate.Dao.dll
+D:\RealEstate\RealEstate\RealEstate.Repository\bin\Debug\netcoreapp3.1\RealEstate.Models.dll
+D:\RealEstate\RealEstate\RealEstate.Repository\bin\Debug\netcoreapp3.1\RealEstate.Dao.pdb
+D:\RealEstate\RealEstate\RealEstate.Repository\bin\Debug\netcoreapp3.1\RealEstate.Models.pdb
+D:\RealEstate\RealEstate\RealEstate.Repository\obj\Debug\netcoreapp3.1\RealEstate.Repository.csprojAssemblyReference.cache
+D:\RealEstate\RealEstate\RealEstate.Repository\obj\Debug\netcoreapp3.1\RealEstate.Repository.AssemblyInfoInputs.cache
+D:\RealEstate\RealEstate\RealEstate.Repository\obj\Debug\netcoreapp3.1\RealEstate.Repository.AssemblyInfo.cs
+D:\RealEstate\RealEstate\RealEstate.Repository\obj\Debug\netcoreapp3.1\RealEstate.Repository.csproj.CoreCompileInputs.cache
+D:\RealEstate\RealEstate\RealEstate.Repository\obj\Debug\netcoreapp3.1\RealEstate.Repository.csproj.CopyComplete
+D:\RealEstate\RealEstate\RealEstate.Repository\obj\Debug\netcoreapp3.1\RealEstate.Repository.dll
+D:\RealEstate\RealEstate\RealEstate.Repository\obj\Debug\netcoreapp3.1\RealEstate.Repository.pdb

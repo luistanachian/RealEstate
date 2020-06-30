@@ -1,0 +1,15 @@
+D:\RealEstate\RealEstate\RealEstate.Dao\bin\Debug\netcoreapp3.1\RealEstate.Dao.deps.json
+D:\RealEstate\RealEstate\RealEstate.Dao\bin\Debug\netcoreapp3.1\RealEstate.Dao.runtimeconfig.json
+D:\RealEstate\RealEstate\RealEstate.Dao\bin\Debug\netcoreapp3.1\RealEstate.Dao.runtimeconfig.dev.json
+D:\RealEstate\RealEstate\RealEstate.Dao\bin\Debug\netcoreapp3.1\RealEstate.Dao.dll
+D:\RealEstate\RealEstate\RealEstate.Dao\bin\Debug\netcoreapp3.1\RealEstate.Dao.pdb
+D:\RealEstate\RealEstate\RealEstate.Dao\bin\Debug\netcoreapp3.1\RealEstate.Models.dll
+D:\RealEstate\RealEstate\RealEstate.Dao\bin\Debug\netcoreapp3.1\RealEstate.Models.pdb
+D:\RealEstate\RealEstate\RealEstate.Dao\obj\Debug\netcoreapp3.1\RealEstate.Dao.csprojAssemblyReference.cache
+D:\RealEstate\RealEstate\RealEstate.Dao\obj\Debug\netcoreapp3.1\RealEstate.Dao.AssemblyInfoInputs.cache
+D:\RealEstate\RealEstate\RealEstate.Dao\obj\Debug\netcoreapp3.1\RealEstate.Dao.AssemblyInfo.cs
+D:\RealEstate\RealEstate\RealEstate.Dao\obj\Debug\netcoreapp3.1\RealEstate.Dao.csproj.CoreCompileInputs.cache
+D:\RealEstate\RealEstate\RealEstate.Dao\obj\Debug\netcoreapp3.1\RealEstate.Dao.csproj.CopyComplete
+D:\RealEstate\RealEstate\RealEstate.Dao\obj\Debug\netcoreapp3.1\RealEstate.Dao.dll
+D:\RealEstate\RealEstate\RealEstate.Dao\obj\Debug\netcoreapp3.1\RealEstate.Dao.pdb
+D:\RealEstate\RealEstate\RealEstate.Dao\obj\Debug\netcoreapp3.1\RealEstate.Dao.genruntimeconfig.cache

@@ -1,0 +1,9 @@
+D:\RealEstate\RealEstate\RealEstate.Models\bin\Debug\netcoreapp3.1\RealEstate.Models.deps.json
+D:\RealEstate\RealEstate\RealEstate.Models\bin\Debug\netcoreapp3.1\RealEstate.Models.dll
+D:\RealEstate\RealEstate\RealEstate.Models\bin\Debug\netcoreapp3.1\RealEstate.Models.pdb
+D:\RealEstate\RealEstate\RealEstate.Models\obj\Debug\netcoreapp3.1\RealEstate.Models.AssemblyInfoInputs.cache
+D:\RealEstate\RealEstate\RealEstate.Models\obj\Debug\netcoreapp3.1\RealEstate.Models.AssemblyInfo.cs
+D:\RealEstate\RealEstate\RealEstate.Models\obj\Debug\netcoreapp3.1\RealEstate.Models.csproj.CoreCompileInputs.cache
+D:\RealEstate\RealEstate\RealEstate.Models\obj\Debug\netcoreapp3.1\RealEstate.Models.dll
+D:\RealEstate\RealEstate\RealEstate.Models\obj\Debug\netcoreapp3.1\RealEstate.Models.pdb
+D:\RealEstate\RealEstate\RealEstate.Models\obj\Debug\netcoreapp3.1\RealEstate.Models.csprojAssemblyReference.cache
