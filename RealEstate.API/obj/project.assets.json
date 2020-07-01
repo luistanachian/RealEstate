@@ -7183,11 +7183,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\RealEstate\\RealEstate\\RealEstate.API\\RealEstate.API.csproj",
+      "projectUniqueName": "C:\\Users\\dev\\Desktop\\netCore\\gitApp\\realestate\\RealEstate.API\\RealEstate.API.csproj",
       "projectName": "RealEstate.API",
-      "projectPath": "D:\\RealEstate\\RealEstate\\RealEstate.API\\RealEstate.API.csproj",
+      "projectPath": "C:\\Users\\dev\\Desktop\\netCore\\gitApp\\realestate\\RealEstate.API\\RealEstate.API.csproj",
       "packagesPath": "C:\\Users\\dev\\.nuget\\packages\\",
-      "outputPath": "D:\\RealEstate\\RealEstate\\RealEstate.API\\obj\\",
+      "outputPath": "C:\\Users\\dev\\Desktop\\netCore\\gitApp\\realestate\\RealEstate.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -7207,11 +7207,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\RealEstate\\RealEstate\\RealEstate.Ioc\\RealEstate.Ioc.csproj": {
-              "projectPath": "D:\\RealEstate\\RealEstate\\RealEstate.Ioc\\RealEstate.Ioc.csproj"
+            "C:\\Users\\dev\\Desktop\\netCore\\gitApp\\realestate\\RealEstate.Ioc\\RealEstate.Ioc.csproj": {
+              "projectPath": "C:\\Users\\dev\\Desktop\\netCore\\gitApp\\realestate\\RealEstate.Ioc\\RealEstate.Ioc.csproj"
             },
-            "D:\\RealEstate\\RealEstate\\RealEstate.Models\\RealEstate.Models.csproj": {
-              "projectPath": "D:\\RealEstate\\RealEstate\\RealEstate.Models\\RealEstate.Models.csproj"
+            "C:\\Users\\dev\\Desktop\\netCore\\gitApp\\realestate\\RealEstate.Models\\RealEstate.Models.csproj": {
+              "projectPath": "C:\\Users\\dev\\Desktop\\netCore\\gitApp\\realestate\\RealEstate.Models\\RealEstate.Models.csproj"
             }
           }
         }

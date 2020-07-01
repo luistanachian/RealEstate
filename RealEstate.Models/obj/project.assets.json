@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\RealEstate\\RealEstate\\RealEstate.Models\\RealEstate.Models.csproj",
+      "projectUniqueName": "C:\\Users\\dev\\Desktop\\netCore\\gitApp\\realestate\\RealEstate.Models\\RealEstate.Models.csproj",
       "projectName": "RealEstate.Models",
-      "projectPath": "D:\\RealEstate\\RealEstate\\RealEstate.Models\\RealEstate.Models.csproj",
+      "projectPath": "C:\\Users\\dev\\Desktop\\netCore\\gitApp\\realestate\\RealEstate.Models\\RealEstate.Models.csproj",
       "packagesPath": "C:\\Users\\dev\\.nuget\\packages\\",
-      "outputPath": "D:\\RealEstate\\RealEstate\\RealEstate.Models\\obj\\",
+      "outputPath": "C:\\Users\\dev\\Desktop\\netCore\\gitApp\\realestate\\RealEstate.Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

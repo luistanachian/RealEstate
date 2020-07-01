@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LBBrr/6ZBXtnffVlRBCFn08YI/IyQ6lBcciNTDZVghSSswThmAyr+qQfGRrsg+WGKP8O/bzAATHE1BzbO3+Mpg==",
+  "dgSpecHash": "2ynUtPac/NKqr5c3EqyU1+dLpeArIstnhkCZZLT63HuKTLZi5L3kUo269jOQs/rc4jZuUTjMPIL6FgHuGkTC1Q==",
   "success": true,
-  "projectFilePath": "D:\\RealEstate\\RealEstate\\RealEstate.Repository\\RealEstate.Repository.csproj",
+  "projectFilePath": "C:\\Users\\dev\\Desktop\\netCore\\gitApp\\realestate\\RealEstate.Repository\\RealEstate.Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dev\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\dev\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

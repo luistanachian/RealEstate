@@ -6835,11 +6835,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\RealEstate\\RealEstate\\RealEstate.Dao\\RealEstate.Dao.csproj",
+      "projectUniqueName": "C:\\Users\\dev\\Desktop\\netCore\\gitApp\\realestate\\RealEstate.Dao\\RealEstate.Dao.csproj",
       "projectName": "RealEstate.Dao",
-      "projectPath": "D:\\RealEstate\\RealEstate\\RealEstate.Dao\\RealEstate.Dao.csproj",
+      "projectPath": "C:\\Users\\dev\\Desktop\\netCore\\gitApp\\realestate\\RealEstate.Dao\\RealEstate.Dao.csproj",
       "packagesPath": "C:\\Users\\dev\\.nuget\\packages\\",
-      "outputPath": "D:\\RealEstate\\RealEstate\\RealEstate.Dao\\obj\\",
+      "outputPath": "C:\\Users\\dev\\Desktop\\netCore\\gitApp\\realestate\\RealEstate.Dao\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6859,8 +6859,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\RealEstate\\RealEstate\\RealEstate.Models\\RealEstate.Models.csproj": {
-              "projectPath": "D:\\RealEstate\\RealEstate\\RealEstate.Models\\RealEstate.Models.csproj"
+            "C:\\Users\\dev\\Desktop\\netCore\\gitApp\\realestate\\RealEstate.Models\\RealEstate.Models.csproj": {
+              "projectPath": "C:\\Users\\dev\\Desktop\\netCore\\gitApp\\realestate\\RealEstate.Models\\RealEstate.Models.csproj"
             }
           }
         }

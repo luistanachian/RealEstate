@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Adc+vmJ80AsCP9X8hAkGTSN2iVZJhE2BOTrjqfBFlFNUWnWHmDwDbdADRouzFZWEeNfBXGRE3bg6SWJ/Bm3Peg==",
+  "dgSpecHash": "e3MrkdAp4lbGCIlIPTFBP0r6OznO7Js6u4lMlqNO/TxR8AmUsoQ6spMmsjXoXnVaiS0drb6X5EzrbowpuOMtiw==",
   "success": true,
-  "projectFilePath": "D:\\RealEstate\\RealEstate\\RealEstate.API\\RealEstate.API.csproj",
+  "projectFilePath": "C:\\Users\\dev\\Desktop\\netCore\\gitApp\\realestate\\RealEstate.API\\RealEstate.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dev\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.0.0\\microsoft.aspnetcore.jsonpatch.3.0.0.nupkg.sha512",
     "C:\\Users\\dev\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.0.0\\microsoft.aspnetcore.mvc.newtonsoftjson.3.0.0.nupkg.sha512",
