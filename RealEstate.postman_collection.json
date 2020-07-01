@@ -1,0 +1,278 @@
+{
+	"info": {
+		"_postman_id": "161f1397-954a-4da0-a1e6-08d3265afc64",
+		"name": "RealEstate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Monedas",
+			"item": [
+				{
+					"name": "Monedas.GetAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Usuario\": \"bancor\",\r\n    \"Clave\": \"bancor123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44332/api/monedas",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44332",
+							"path": [
+								"api",
+								"monedas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mondes.GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44332/api/monedas/b",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44332",
+							"path": [
+								"api",
+								"monedas",
+								"b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Monedas.Insert",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idMoneda\": \"b\",\r\n    \"moneda\": \"BsF\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44332/api/monedas",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44332",
+							"path": [
+								"api",
+								"monedas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Monedas.Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idMoneda\": \"b\",\r\n    \"moneda\": \"BsF2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44332/api/monedas",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44332",
+							"path": [
+								"api",
+								"monedas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Monedas.Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44332/api/monedas/b",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44332",
+							"path": [
+								"api",
+								"monedas",
+								"b"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Dirección",
+			"item": [
+				{
+					"name": "Dirección.Paises.GetAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Usuario\": \"bancor\",\r\n    \"Clave\": \"bancor123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44332/api/direccion/pais",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44332",
+							"path": [
+								"api",
+								"direccion",
+								"pais"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dirección.Paises.Insert",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idPais\" : \"AR\",\r\n    \"pais\" : \"Argentina\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44332/api/direccion/pais",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44332",
+							"path": [
+								"api",
+								"direccion",
+								"pais"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dirección.Paises.Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idPais\" : \"AR\",\r\n    \"pais\" : \"Argentina\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44332/api/direccion/pais",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44332",
+							"path": [
+								"api",
+								"direccion",
+								"pais"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dirección.Paises.Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Usuario\": \"bancor\",\r\n    \"Clave\": \"bancor123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44332/api/direccion/pais/ar",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44332",
+							"path": [
+								"api",
+								"direccion",
+								"pais",
+								"ar"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
