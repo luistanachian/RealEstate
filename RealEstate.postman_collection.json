@@ -147,128 +147,302 @@
 			"name": "Dirección",
 			"item": [
 				{
-					"name": "Dirección.Paises.GetAll",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"Usuario\": \"bancor\",\r\n    \"Clave\": \"bancor123\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
+					"name": "Paises",
+					"item": [
+						{
+							"name": "Dirección.Paises.GetAll",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Usuario\": \"bancor\",\r\n    \"Clave\": \"bancor123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44332/api/direccion/pais",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44332",
+									"path": [
+										"api",
+										"direccion",
+										"pais"
+									]
 								}
-							}
+							},
+							"response": []
 						},
-						"url": {
-							"raw": "https://localhost:44332/api/direccion/pais",
-							"protocol": "https",
-							"host": [
-								"localhost"
-							],
-							"port": "44332",
-							"path": [
-								"api",
-								"direccion",
-								"pais"
-							]
+						{
+							"name": "Dirección.Paises.Insert",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"idPais\" : \"AR\",\r\n    \"pais\" : \"Argentina\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44332/api/direccion/pais",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44332",
+									"path": [
+										"api",
+										"direccion",
+										"pais"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Dirección.Paises.Update",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"idPais\" : \"AR\",\r\n    \"pais\" : \"Argentina\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44332/api/direccion/pais",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44332",
+									"path": [
+										"api",
+										"direccion",
+										"pais"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Dirección.Paises.Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Usuario\": \"bancor\",\r\n    \"Clave\": \"bancor123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44332/api/direccion/pais/ar",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44332",
+									"path": [
+										"api",
+										"direccion",
+										"pais",
+										"ar"
+									]
+								}
+							},
+							"response": []
 						}
-					},
-					"response": []
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
 				},
 				{
-					"name": "Dirección.Paises.Insert",
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"idPais\" : \"AR\",\r\n    \"pais\" : \"Argentina\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
+					"name": "Estados",
+					"item": [
+						{
+							"name": "Dirección.Estados.GetByIdPais",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Usuario\": \"bancor\",\r\n    \"Clave\": \"bancor123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44332/api/direccion/estado/idPais/ar",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44332",
+									"path": [
+										"api",
+										"direccion",
+										"estado",
+										"idPais",
+										"ar"
+									]
 								}
-							}
+							},
+							"response": []
 						},
-						"url": {
-							"raw": "https://localhost:44332/api/direccion/pais",
-							"protocol": "https",
-							"host": [
-								"localhost"
-							],
-							"port": "44332",
-							"path": [
-								"api",
-								"direccion",
-								"pais"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Dirección.Paises.Update",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"idPais\" : \"AR\",\r\n    \"pais\" : \"Argentina\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
+						{
+							"name": "Dirección.Estados.GetById",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Usuario\": \"bancor\",\r\n    \"Clave\": \"bancor123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44332/api/direccion/estado/cor",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44332",
+									"path": [
+										"api",
+										"direccion",
+										"estado",
+										"cor"
+									]
 								}
-							}
+							},
+							"response": []
 						},
-						"url": {
-							"raw": "https://localhost:44332/api/direccion/pais",
-							"protocol": "https",
-							"host": [
-								"localhost"
-							],
-							"port": "44332",
-							"path": [
-								"api",
-								"direccion",
-								"pais"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Dirección.Paises.Delete",
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"Usuario\": \"bancor\",\r\n    \"Clave\": \"bancor123\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
+						{
+							"name": "Dirección.Estados.Insert",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"IdEstado\" : \"cor\",\r\n    \"IdPais\" : \"ar\",\r\n    \"Estado\" :  \"Córdoba\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44332/api/direccion/estado",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44332",
+									"path": [
+										"api",
+										"direccion",
+										"estado"
+									]
 								}
-							}
+							},
+							"response": []
 						},
-						"url": {
-							"raw": "https://localhost:44332/api/direccion/pais/ar",
-							"protocol": "https",
-							"host": [
-								"localhost"
-							],
-							"port": "44332",
-							"path": [
-								"api",
-								"direccion",
-								"pais",
-								"ar"
-							]
+						{
+							"name": "Dirección.Estados.Update",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"IdEstado\" : \"cor\",\r\n    \"IdPais\" : \"ar\",\r\n    \"Estado\" :  \"Córdoba\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44332/api/direccion/estado",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44332",
+									"path": [
+										"api",
+										"direccion",
+										"estado"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Dirección.Estados.Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Usuario\": \"bancor\",\r\n    \"Clave\": \"bancor123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44332/api/direccion/estado/cor",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44332",
+									"path": [
+										"api",
+										"direccion",
+										"estado",
+										"cor"
+									]
+								}
+							},
+							"response": []
 						}
-					},
-					"response": []
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
 				}
 			],
 			"protocolProfileBehavior": {}
