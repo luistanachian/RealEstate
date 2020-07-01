@@ -10,10 +10,15 @@ namespace RealEstate.API.Controllers
     public class DireccionController : ControllerBase
     {
         private readonly IDireccionPaisesBusiness _direccionPaisesBusiness;
-        public DireccionController(IDireccionPaisesBusiness direccionPaisesBusiness)
+        private readonly IDireccionEstadosBusiness _direccionEstadosBusiness;
+        public DireccionController(IDireccionPaisesBusiness direccionPaisesBusiness,
+            IDireccionEstadosBusiness direccionEstadosBusiness)
         {
             _direccionPaisesBusiness = direccionPaisesBusiness;
+            _direccionEstadosBusiness = direccionEstadosBusiness;
         }
+
+        #region Paises
 
         [Route("pais")]
         [HttpGet]
@@ -65,5 +70,65 @@ namespace RealEstate.API.Controllers
 
             return BadRequest();
         }
+
+
+        #endregion
+
+        #region Estados
+
+        [Route("estado/idpais/{idPais}")]
+        [HttpGet]
+        public IActionResult EstadosGetByIdPais(string idPais)
+        {
+            var estados = _direccionEstadosBusiness.GetByIdPais(idPais);
+            if (estados != null && estados.Count() > 0)
+                return Ok(estados);
+
+            return NoContent();
+        }
+        [Route("estado/{id}")]
+        [HttpGet]
+        public IActionResult EstadosGetById(string id)
+        {
+            var estado = _direccionEstadosBusiness.GetById(id);
+            if (estado != null)
+                return Ok(estado);
+
+            return NoContent();
+        }
+        [Route("estado")]
+        [HttpPut]
+        public IActionResult EstadosInsert(DireccionEstados estado)
+        {
+            var guardado = _direccionEstadosBusiness.Insert(estado);
+            if (guardado)
+                return Ok();
+
+            return BadRequest();
+        }
+        [Route("estado")]
+        [HttpPost]
+        public IActionResult EstadosUpdate(DireccionEstados estado)
+        {
+            var guardado = _direccionEstadosBusiness.Update(estado);
+            if (guardado)
+                return Ok();
+
+            return BadRequest();
+        }
+        [Route("estado/{id}")]
+        [HttpDelete]
+        public IActionResult EstadosDelete(string id)
+        {
+            var guardado = _direccionEstadosBusiness.Delete(id);
+            if (guardado)
+                return Ok();
+
+            return BadRequest();
+        }
+
+
+        #endregion
+
     }
 }

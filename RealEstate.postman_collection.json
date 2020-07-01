@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "161f1397-954a-4da0-a1e6-08d3265afc64",
+		"_postman_id": "4eb49cf2-a610-4cfc-a970-a7ff2edad454",
 		"name": "RealEstate",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -18,7 +18,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"Usuario\": \"bancor\",\r\n    \"Clave\": \"bancor123\"\r\n}",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -272,6 +272,28 @@
 				}
 			],
 			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "7aef2241-d5fa-4b23-944c-9e2b6b9778d5",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "f448accf-a1ce-45fb-8b7b-3f8c2b88c450",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
 		}
 	],
 	"protocolProfileBehavior": {}
