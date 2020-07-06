@@ -26,6 +26,14 @@ namespace RealEstate.Ioc
             services.AddTransient<IDireccionEstadosBusiness, DireccionEstadosBusiness>();
             services.AddTransient<IDireccionEstadosRepository, DireccionEstadosRepository>();
             services.AddTransient<IDireccionEstadosDao, DireccionEstadosDao>();
+
+            services.AddTransient<IDireccionLocalidadesBusiness, DireccionLocalidadesBusiness>();
+            services.AddTransient<IDireccionLocalidadesRepository, DireccionLocalidadesRepository>();
+            services.AddTransient<IDireccionLocalidadesDao, DireccionLocalidadesDao>();
+
+            services.AddTransient<IDireccionBarriosBusiness, DireccionBarriosBusiness>();
+            services.AddTransient<IDireccionBarriosRepository, DireccionBarriosRepository>();
+            services.AddTransient<IDireccionBarriosDao, DireccionBarriosDao>();
         }
     }
 }
