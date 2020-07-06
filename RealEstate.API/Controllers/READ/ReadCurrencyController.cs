@@ -6,10 +6,10 @@ namespace RealEstate.API.Controllers.READ
 {
     [Route("api/v1/read/currency")]
     [ApiController]
-    public class ReadMonedasController : ControllerBase
+    public class ReadCurrencyController : ControllerBase
     {
         public readonly IMonedasBusiness _monedasBusiness;
-        public ReadMonedasController(IMonedasBusiness monedasBusiness)
+        public ReadCurrencyController(IMonedasBusiness monedasBusiness)
         {
             _monedasBusiness = monedasBusiness;
         }

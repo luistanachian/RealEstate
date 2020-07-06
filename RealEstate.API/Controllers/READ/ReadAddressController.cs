@@ -7,12 +7,12 @@ namespace RealEstate.API.Controllers.READ
 {
     [Route("api/v1/read/address")]
     [ApiController]
-    public class ReadDireccionesController : ControllerBase
+    public class ReadAddressController : ControllerBase
     {
         private readonly IDireccionEstadosBusiness _direccionEstadosBusiness;
         private readonly IDireccionLocalidadesBusiness _direccionLocalidadesBusiness;
         private readonly IDireccionBarriosBusiness _direccionBarriosBusiness;
-        public ReadDireccionesController(IDireccionEstadosBusiness direccionEstadosBusiness,
+        public ReadAddressController(IDireccionEstadosBusiness direccionEstadosBusiness,
             IDireccionLocalidadesBusiness direccionLocalidadesBusiness,
             IDireccionBarriosBusiness direccionBarriosBusiness)
         {
@@ -23,7 +23,7 @@ namespace RealEstate.API.Controllers.READ
 
         #region state
 
-        [Route("state}")]
+        [Route("state")]
         [HttpGet]
         public IActionResult EstadosGetByIdPais()
         {

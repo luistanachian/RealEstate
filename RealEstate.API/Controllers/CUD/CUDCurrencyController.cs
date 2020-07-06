@@ -6,10 +6,10 @@ namespace RealEstate.API.Controllers.CUD
 {
     [Route("api/v1/cud/currency")]
     [ApiController]
-    public class CUDMonedasController : ControllerBase
+    public class CUDCurrencyController : ControllerBase
     {
         public readonly IMonedasBusiness _monedasBusiness;
-        public CUDMonedasController(IMonedasBusiness monedasBusiness)
+        public CUDCurrencyController(IMonedasBusiness monedasBusiness)
         {
             _monedasBusiness = monedasBusiness;
         }

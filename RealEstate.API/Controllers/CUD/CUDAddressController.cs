@@ -6,12 +6,12 @@ namespace RealEstate.API.Controllers.CUD
 {
     [Route("api/v1/cud/address")]
     [ApiController]
-    public class CUDireccionesController : ControllerBase
+    public class CUDAddressController : ControllerBase
     {
         private readonly IDireccionEstadosBusiness _direccionEstadosBusiness;
         private readonly IDireccionLocalidadesBusiness _direccionLocalidadesBusiness;
         private readonly IDireccionBarriosBusiness _direccionBarriosBusiness;
-        public CUDireccionesController(IDireccionEstadosBusiness direccionEstadosBusiness,
+        public CUDAddressController(IDireccionEstadosBusiness direccionEstadosBusiness,
             IDireccionLocalidadesBusiness direccionLocalidadesBusiness,
             IDireccionBarriosBusiness direccionBarriosBusiness)
         {
