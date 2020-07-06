@@ -8,56 +8,17 @@ namespace RealEstate.API.Controllers.CUD
     [ApiController]
     public class CUDireccionesController : ControllerBase
     {
-        private readonly IDireccionPaisesBusiness _direccionPaisesBusiness;
         private readonly IDireccionEstadosBusiness _direccionEstadosBusiness;
         private readonly IDireccionLocalidadesBusiness _direccionLocalidadesBusiness;
         private readonly IDireccionBarriosBusiness _direccionBarriosBusiness;
-        public CUDireccionesController(IDireccionPaisesBusiness direccionPaisesBusiness,
-            IDireccionEstadosBusiness direccionEstadosBusiness,
+        public CUDireccionesController(IDireccionEstadosBusiness direccionEstadosBusiness,
             IDireccionLocalidadesBusiness direccionLocalidadesBusiness,
             IDireccionBarriosBusiness direccionBarriosBusiness)
         {
-            _direccionPaisesBusiness = direccionPaisesBusiness;
             _direccionEstadosBusiness = direccionEstadosBusiness;
             _direccionLocalidadesBusiness = direccionLocalidadesBusiness;
             _direccionBarriosBusiness = direccionBarriosBusiness;
         }
-
-        #region country
-
-        [Route("country")]
-        [HttpPut]
-        public IActionResult Insert(DireccionPaises country)
-        {
-            var guardado = _direccionPaisesBusiness.Insert(country);
-            if (guardado)
-                return Ok();
-
-            return BadRequest();
-        }
-        [Route("country")]
-        [HttpPost]
-        public IActionResult Update(DireccionPaises country)
-        {
-            var guardado = _direccionPaisesBusiness.Update(country);
-            if (guardado)
-                return Ok();
-
-            return BadRequest();
-        }
-        [Route("country/{id}")]
-        [HttpDelete]
-        public IActionResult Delete(string id)
-        {
-            var guardado = _direccionPaisesBusiness.Delete(id);
-            if (guardado)
-                return Ok();
-
-            return BadRequest();
-        }
-
-
-        #endregion
 
         #region state
 

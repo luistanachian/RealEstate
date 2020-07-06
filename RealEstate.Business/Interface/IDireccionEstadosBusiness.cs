@@ -5,6 +5,6 @@ namespace RealEstate.Business.Interface
 {
     public interface IDireccionEstadosBusiness : IBaseBusiness<DireccionEstados, string>
     {
-        IEnumerable<DireccionEstados> GetByIdPais(string idPais);
+
     }
 }

@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata;
 using RealEstate.Models.Entity;
 
 namespace RealEstate.Dao.Context
@@ -17,7 +19,6 @@ namespace RealEstate.Dao.Context
         public virtual DbSet<DireccionBarrios> DireccionBarrios { get; set; }
         public virtual DbSet<DireccionEstados> DireccionEstados { get; set; }
         public virtual DbSet<DireccionLocalidades> DireccionLocalidades { get; set; }
-        public virtual DbSet<DireccionPaises> DireccionPaises { get; set; }
         public virtual DbSet<Monedas> Monedas { get; set; }
         public virtual DbSet<Publicaciones> Publicaciones { get; set; }
         public virtual DbSet<PublicacionesPlanes> PublicacionesPlanes { get; set; }
@@ -76,17 +77,6 @@ namespace RealEstate.Dao.Context
                     .IsRequired()
                     .HasColumnName("estado")
                     .HasMaxLength(50);
-
-                entity.Property(e => e.IdPais)
-                    .IsRequired()
-                    .HasColumnName("idPais")
-                    .HasMaxLength(3);
-
-                entity.HasOne(d => d.IdPaisNavigation)
-                    .WithMany(p => p.DireccionEstados)
-                    .HasForeignKey(d => d.IdPais)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Direccion_Estados_Direccion_Paises");
             });
 
             modelBuilder.Entity<DireccionLocalidades>(entity =>
@@ -114,22 +104,6 @@ namespace RealEstate.Dao.Context
                     .HasForeignKey(d => d.IdEstado)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Direccion_Localidades_Direccion_Estados");
-            });
-
-            modelBuilder.Entity<DireccionPaises>(entity =>
-            {
-                entity.HasKey(e => e.IdPais);
-
-                entity.ToTable("Direccion_Paises");
-
-                entity.Property(e => e.IdPais)
-                    .HasColumnName("idPais")
-                    .HasMaxLength(3);
-
-                entity.Property(e => e.Pais)
-                    .IsRequired()
-                    .HasColumnName("pais")
-                    .HasMaxLength(50);
             });
 
             modelBuilder.Entity<Monedas>(entity =>

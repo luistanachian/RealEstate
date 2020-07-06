@@ -29,11 +29,6 @@ namespace RealEstate.Repository.Class
             return _direccionEstadosDao.GetById(id);
         }
 
-        public IEnumerable<DireccionEstados> GetByIdPais(string idPais)
-        {
-            return _direccionEstadosDao.GetListByFunc(e => e.IdPais == idPais);
-        }
-
         public bool Insert(DireccionEstados entity)
         {
             var rowsCount = _direccionEstadosDao.Insert(entity);

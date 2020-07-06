@@ -10,7 +10,6 @@ D:\RealEstate\RealEstate\RealEstate.Models\obj\Debug\netcoreapp3.1\RealEstate.Mo
 C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.Models\bin\Debug\netcoreapp3.1\RealEstate.Models.deps.json
 C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.Models\bin\Debug\netcoreapp3.1\RealEstate.Models.dll
 C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.Models\bin\Debug\netcoreapp3.1\RealEstate.Models.pdb
-C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.Models\obj\Debug\netcoreapp3.1\RealEstate.Models.csprojAssemblyReference.cache
 C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.Models\obj\Debug\netcoreapp3.1\RealEstate.Models.AssemblyInfoInputs.cache
 C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.Models\obj\Debug\netcoreapp3.1\RealEstate.Models.AssemblyInfo.cs
 C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.Models\obj\Debug\netcoreapp3.1\RealEstate.Models.csproj.CoreCompileInputs.cache

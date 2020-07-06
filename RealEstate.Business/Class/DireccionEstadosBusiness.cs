@@ -27,10 +27,6 @@ namespace RealEstate.Business.Class
         {
             return _direccionEstadosRepository.GetById(id);
         }
-        public IEnumerable<DireccionEstados> GetByIdPais(string idPais)
-        {
-            return _direccionEstadosRepository.GetByIdPais(idPais);
-        }
 
         public bool Insert(DireccionEstados entity)
         {

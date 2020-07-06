@@ -15,25 +15,18 @@ namespace RealEstate.Ioc
         {
             services.AddDbContext<RealEstateContext>();
 
-            services.AddTransient<IMonedasBusiness, MonedasBusiness>();
-            services.AddTransient<IMonedasRepository, MonedasRepository>();
-            services.AddTransient<IMonedasDao, MonedasDao>();
-
-            services.AddTransient<IDireccionPaisesBusiness, DireccionPaisesBusiness>();
-            services.AddTransient<IDireccionPaisesRepository, DireccionPaisesRepository>();
-            services.AddTransient<IDireccionPaisesDao, DireccionPaisesDao>();
-
-            services.AddTransient<IDireccionEstadosBusiness, DireccionEstadosBusiness>();
-            services.AddTransient<IDireccionEstadosRepository, DireccionEstadosRepository>();
-            services.AddTransient<IDireccionEstadosDao, DireccionEstadosDao>();
-
-            services.AddTransient<IDireccionLocalidadesBusiness, DireccionLocalidadesBusiness>();
-            services.AddTransient<IDireccionLocalidadesRepository, DireccionLocalidadesRepository>();
-            services.AddTransient<IDireccionLocalidadesDao, DireccionLocalidadesDao>();
-
-            services.AddTransient<IDireccionBarriosBusiness, DireccionBarriosBusiness>();
-            services.AddTransient<IDireccionBarriosRepository, DireccionBarriosRepository>();
-            services.AddTransient<IDireccionBarriosDao, DireccionBarriosDao>();
+            services.AddSingleton<IMonedasBusiness, MonedasBusiness>();
+            services.AddSingleton<IMonedasRepository, MonedasRepository>();
+            services.AddSingleton<IMonedasDao, MonedasDao>();
+            services.AddSingleton<IDireccionEstadosBusiness, DireccionEstadosBusiness>();
+            services.AddSingleton<IDireccionEstadosRepository, DireccionEstadosRepository>();
+            services.AddSingleton<IDireccionEstadosDao, DireccionEstadosDao>();
+            services.AddSingleton<IDireccionLocalidadesBusiness, DireccionLocalidadesBusiness>();
+            services.AddSingleton<IDireccionLocalidadesRepository, DireccionLocalidadesRepository>();
+            services.AddSingleton<IDireccionLocalidadesDao, DireccionLocalidadesDao>();
+            services.AddSingleton<IDireccionBarriosBusiness, DireccionBarriosBusiness>();
+            services.AddSingleton<IDireccionBarriosRepository, DireccionBarriosRepository>();
+            services.AddSingleton<IDireccionBarriosDao, DireccionBarriosDao>();
         }
     }
 }

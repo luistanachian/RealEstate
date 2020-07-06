@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace RealEstate.Models.Entity
 {
@@ -10,10 +11,8 @@ namespace RealEstate.Models.Entity
         }
 
         public string IdEstado { get; set; }
-        public string IdPais { get; set; }
         public string Estado { get; set; }
 
-        public virtual DireccionPaises IdPaisNavigation { get; set; }
         public virtual ICollection<DireccionLocalidades> DireccionLocalidades { get; set; }
     }
 }

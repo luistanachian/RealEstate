@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using RealEstate.Business.Interface;
 
@@ -8,53 +9,25 @@ namespace RealEstate.API.Controllers.READ
     [ApiController]
     public class ReadDireccionesController : ControllerBase
     {
-        private readonly IDireccionPaisesBusiness _direccionPaisesBusiness;
         private readonly IDireccionEstadosBusiness _direccionEstadosBusiness;
         private readonly IDireccionLocalidadesBusiness _direccionLocalidadesBusiness;
         private readonly IDireccionBarriosBusiness _direccionBarriosBusiness;
-        public ReadDireccionesController(IDireccionPaisesBusiness direccionPaisesBusiness,
-            IDireccionEstadosBusiness direccionEstadosBusiness,
+        public ReadDireccionesController(IDireccionEstadosBusiness direccionEstadosBusiness,
             IDireccionLocalidadesBusiness direccionLocalidadesBusiness,
             IDireccionBarriosBusiness direccionBarriosBusiness)
         {
-            _direccionPaisesBusiness = direccionPaisesBusiness;
             _direccionEstadosBusiness = direccionEstadosBusiness;
             _direccionLocalidadesBusiness = direccionLocalidadesBusiness;
             _direccionBarriosBusiness = direccionBarriosBusiness;
         }
 
-        #region country
-
-        [Route("country")]
-        [HttpGet]
-        public IActionResult PaisGetAll()
-        {
-            var paises = _direccionPaisesBusiness.GetAll();
-            if (paises != null && paises.Count() > 0)
-                return Ok(paises);
-
-            return NoContent();
-        }
-        [Route("country/{id}")]
-        [HttpGet]
-        public IActionResult PaisGetById(string id)
-        {
-            var pais = _direccionPaisesBusiness.GetById(id);
-            if (pais != null)
-                return Ok(pais);
-
-            return NoContent();
-        }
-
-        #endregion
-
         #region state
 
-        [Route("state/idpais/{idcountry}")]
+        [Route("state}")]
         [HttpGet]
-        public IActionResult EstadosGetByIdPais(string idcountry)
+        public IActionResult EstadosGetByIdPais()
         {
-            var estados = _direccionEstadosBusiness.GetByIdPais(idcountry);
+            var estados = _direccionEstadosBusiness.GetAll();
             if (estados != null && estados.Count() > 0)
                 return Ok(estados);
 
