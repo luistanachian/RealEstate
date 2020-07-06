@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using RealEstate.Business.Interface;
 
@@ -23,6 +24,16 @@ namespace RealEstate.API.Controllers.READ
 
         #region state
 
+        [Route("state/search/{word}")]
+        [HttpGet]
+        public async Task<IActionResult> SearchEstate(string word)
+        {
+            var estados = _direccionEstadosBusiness.SearchEstate(word);
+            if (estados != null && estados.Count() > 0)
+                return Ok(estados);
+
+            return NoContent();
+        }
         [Route("state")]
         [HttpGet]
         public IActionResult EstadosGetByIdPais()
@@ -48,13 +59,23 @@ namespace RealEstate.API.Controllers.READ
 
         #region location
 
+        [Route("location/search/{word}")]
+        [HttpGet]
+        public async Task<IActionResult> SearchLocation(string word)
+        {
+            var localidades = _direccionLocalidadesBusiness.SearchLocalidades(word);
+            if (localidades != null && localidades.Count() > 0)
+                return Ok(localidades);
+
+            return NoContent();
+        }
         [Route("location/idstate/{idstate}")]
         [HttpGet]
         public IActionResult LocalidadesGetByIdPais(string idstate)
         {
-            var Localidades = _direccionLocalidadesBusiness.GetByIdEstado(idstate);
-            if (Localidades != null && Localidades.Count() > 0)
-                return Ok(Localidades);
+            var localidades = _direccionLocalidadesBusiness.GetByIdEstado(idstate);
+            if (localidades != null && localidades.Count() > 0)
+                return Ok(localidades);
 
             return NoContent();
         }

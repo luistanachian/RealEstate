@@ -1,4 +1,5 @@
 ﻿using RealEstate.Dao.Interface;
+using RealEstate.Models.Common;
 using RealEstate.Models.Entity;
 using RealEstate.Repository.Interface;
 using System.Collections.Generic;
@@ -19,6 +20,10 @@ namespace RealEstate.Repository.Class
             return rowsCount > 0;
         }
 
+        public IEnumerable<SearchItemModel> SearchLocalidades(string word, int top)
+        {
+            return _DireccionLocalidadesDao.SearchLocalidades(word, top);
+        }
         public IEnumerable<DireccionLocalidades> GetAll()
         {
             return _DireccionLocalidadesDao.GetAll();
@@ -39,6 +44,7 @@ namespace RealEstate.Repository.Class
             var rowsCount = _DireccionLocalidadesDao.Insert(entity);
             return rowsCount > 0;
         }
+
 
         public bool Update(DireccionLocalidades entity)
         {

@@ -18,6 +18,11 @@ namespace RealEstate.Business.Class
             return _direccionEstadosRepository.Delete(id);
         }
 
+        public IEnumerable<DireccionEstados> SearchEstate(string word)
+        {
+            var top = 5; //TODO agregar en appsettings
+            return _direccionEstadosRepository.SearchEstate(word, top);
+        }
         public IEnumerable<DireccionEstados> GetAll()
         {
             return _direccionEstadosRepository.GetAll();

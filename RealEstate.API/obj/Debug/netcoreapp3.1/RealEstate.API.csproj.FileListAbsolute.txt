@@ -73,6 +73,11 @@ D:\RealEstate\RealEstate\RealEstate.API\obj\Debug\netcoreapp3.1\staticwebassets\
 D:\RealEstate\RealEstate\RealEstate.API\obj\Debug\netcoreapp3.1\RealEstate.API.dll
 D:\RealEstate\RealEstate\RealEstate.API\obj\Debug\netcoreapp3.1\RealEstate.API.pdb
 D:\RealEstate\RealEstate\RealEstate.API\obj\Debug\netcoreapp3.1\RealEstate.API.genruntimeconfig.cache
+C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.API\obj\Debug\netcoreapp3.1\RealEstate.API.csprojAssemblyReference.cache
+C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.API\obj\Debug\netcoreapp3.1\RealEstate.API.AssemblyInfoInputs.cache
+C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.API\obj\Debug\netcoreapp3.1\RealEstate.API.AssemblyInfo.cs
+C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.API\obj\Debug\netcoreapp3.1\RealEstate.API.csproj.CoreCompileInputs.cache
+C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.API\obj\Debug\netcoreapp3.1\RealEstate.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.API\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.API\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.API\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -135,12 +140,7 @@ C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.API\bin\Debug\netcorea
 C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.API\bin\Debug\netcoreapp3.1\RealEstate.Business.pdb
 C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.API\bin\Debug\netcoreapp3.1\RealEstate.Dao.pdb
 C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.API\bin\Debug\netcoreapp3.1\RealEstate.Repository.pdb
-C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.API\obj\Debug\netcoreapp3.1\RealEstate.API.csprojAssemblyReference.cache
-C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.API\obj\Debug\netcoreapp3.1\RealEstate.API.AssemblyInfoInputs.cache
-C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.API\obj\Debug\netcoreapp3.1\RealEstate.API.AssemblyInfo.cs
-C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.API\obj\Debug\netcoreapp3.1\RealEstate.API.csproj.CoreCompileInputs.cache
 C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.API\obj\Debug\netcoreapp3.1\RealEstate.API.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.API\obj\Debug\netcoreapp3.1\RealEstate.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.API\obj\Debug\netcoreapp3.1\RealEstate.API.RazorTargetAssemblyInfo.cache
 C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.API\obj\Debug\netcoreapp3.1\RealEstate.API.csproj.CopyComplete
 C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.API\obj\Debug\netcoreapp3.1\staticwebassets\RealEstate.API.StaticWebAssets.Manifest.cache

@@ -31,11 +31,15 @@ namespace RealEstate.Dao.Class
                 return db.Set<TEntity>().FirstOrDefault(conditionLambda);
             }
         }
-        public IEnumerable<TEntity> GetListByFunc(Func<TEntity, bool> conditionLambda)
+        public IEnumerable<TEntity> GetListByFunc(Func<TEntity, bool> conditionLambda, int top = 0)
         {
             using (var db = new RealEstateContext())
             {
-                return db.Set<TEntity>().Where(conditionLambda).ToList();
+                var result = db.Set<TEntity>().Where(conditionLambda);
+                if (top > 0)
+                    return result.Take(top);
+
+                return result.ToList();
             }
         }
         public int Insert(TEntity entity)

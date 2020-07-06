@@ -12,6 +12,10 @@ D:\RealEstate\RealEstate\RealEstate.Repository\obj\Debug\netcoreapp3.1\RealEstat
 D:\RealEstate\RealEstate\RealEstate.Repository\obj\Debug\netcoreapp3.1\RealEstate.Repository.csproj.CopyComplete
 D:\RealEstate\RealEstate\RealEstate.Repository\obj\Debug\netcoreapp3.1\RealEstate.Repository.dll
 D:\RealEstate\RealEstate\RealEstate.Repository\obj\Debug\netcoreapp3.1\RealEstate.Repository.pdb
+C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.Repository\obj\Debug\netcoreapp3.1\RealEstate.Repository.csprojAssemblyReference.cache
+C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.Repository\obj\Debug\netcoreapp3.1\RealEstate.Repository.AssemblyInfoInputs.cache
+C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.Repository\obj\Debug\netcoreapp3.1\RealEstate.Repository.AssemblyInfo.cs
+C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.Repository\obj\Debug\netcoreapp3.1\RealEstate.Repository.csproj.CoreCompileInputs.cache
 C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.Repository\bin\Debug\netcoreapp3.1\RealEstate.Repository.deps.json
 C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.Repository\bin\Debug\netcoreapp3.1\RealEstate.Repository.dll
 C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.Repository\bin\Debug\netcoreapp3.1\RealEstate.Repository.pdb
@@ -19,10 +23,6 @@ C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.Repository\bin\Debug\n
 C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.Repository\bin\Debug\netcoreapp3.1\RealEstate.Models.dll
 C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.Repository\bin\Debug\netcoreapp3.1\RealEstate.Dao.pdb
 C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.Repository\bin\Debug\netcoreapp3.1\RealEstate.Models.pdb
-C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.Repository\obj\Debug\netcoreapp3.1\RealEstate.Repository.csprojAssemblyReference.cache
-C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.Repository\obj\Debug\netcoreapp3.1\RealEstate.Repository.AssemblyInfoInputs.cache
-C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.Repository\obj\Debug\netcoreapp3.1\RealEstate.Repository.AssemblyInfo.cs
-C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.Repository\obj\Debug\netcoreapp3.1\RealEstate.Repository.csproj.CoreCompileInputs.cache
 C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.Repository\obj\Debug\netcoreapp3.1\RealEstate.Repository.csproj.CopyComplete
 C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.Repository\obj\Debug\netcoreapp3.1\RealEstate.Repository.dll
 C:\Users\dev\Desktop\netCore\gitApp\realestate\RealEstate.Repository\obj\Debug\netcoreapp3.1\RealEstate.Repository.pdb

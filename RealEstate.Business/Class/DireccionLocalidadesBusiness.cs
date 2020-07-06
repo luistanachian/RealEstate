@@ -1,4 +1,5 @@
 ﻿using RealEstate.Business.Interface;
+using RealEstate.Models.Common;
 using RealEstate.Models.Entity;
 using RealEstate.Repository.Interface;
 using System.Collections.Generic;
@@ -17,7 +18,11 @@ namespace RealEstate.Business.Class
         {
             return _DireccionLocalidadesRepository.Delete(id);
         }
-
+        public IEnumerable<SearchItemModel> SearchLocalidades(string word)
+        {
+            var top = 5; //TODO agregar en appsettings
+            return _DireccionLocalidadesRepository.SearchLocalidades(word, top);
+        }
         public IEnumerable<DireccionLocalidades> GetAll()
         {
             return _DireccionLocalidadesRepository.GetAll();
