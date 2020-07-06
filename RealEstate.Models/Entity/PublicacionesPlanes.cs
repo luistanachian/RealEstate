@@ -5,11 +5,6 @@ namespace RealEstate.Models.Entity
 {
     public partial class PublicacionesPlanes
     {
-        public PublicacionesPlanes()
-        {
-            Publicaciones = new HashSet<Publicaciones>();
-        }
-
         public string IdPlan { get; set; }
         public string Nombre { get; set; }
         public string Descripcion { get; set; }
@@ -19,7 +14,5 @@ namespace RealEstate.Models.Entity
         public short Dias { get; set; }
         public bool Destacado { get; set; }
         public bool SuperDestacado { get; set; }
-
-        public virtual ICollection<Publicaciones> Publicaciones { get; set; }
     }
 }

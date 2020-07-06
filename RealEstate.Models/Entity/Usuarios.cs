@@ -5,11 +5,6 @@ namespace RealEstate.Models.Entity
 {
     public partial class Usuarios
     {
-        public Usuarios()
-        {
-            Publicaciones = new HashSet<Publicaciones>();
-        }
-
         public string IdUsuario { get; set; }
         public string IdBarrio { get; set; }
         public string Email { get; set; }
@@ -33,8 +28,5 @@ namespace RealEstate.Models.Entity
         public string DirLatitud { get; set; }
         public string DirLongitud { get; set; }
         public string Descripcion { get; set; }
-
-        public virtual DireccionBarrios IdBarrioNavigation { get; set; }
-        public virtual ICollection<Publicaciones> Publicaciones { get; set; }
     }
 }

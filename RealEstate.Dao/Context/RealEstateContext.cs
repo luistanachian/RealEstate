@@ -56,11 +56,6 @@ namespace RealEstate.Dao.Context
                     .HasColumnName("idLocalidad")
                     .HasMaxLength(5);
 
-                entity.HasOne(d => d.IdLocalidadNavigation)
-                    .WithMany(p => p.DireccionBarrios)
-                    .HasForeignKey(d => d.IdLocalidad)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Direccion_Barrios_Direccion_Localidades");
             });
 
             modelBuilder.Entity<DireccionEstados>(entity =>
@@ -99,11 +94,7 @@ namespace RealEstate.Dao.Context
                     .HasColumnName("localidad")
                     .HasMaxLength(50);
 
-                entity.HasOne(d => d.IdEstadoNavigation)
-                    .WithMany(p => p.DireccionLocalidades)
-                    .HasForeignKey(d => d.IdEstado)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Direccion_Localidades_Direccion_Estados");
+
             });
 
             modelBuilder.Entity<Monedas>(entity =>
@@ -241,35 +232,10 @@ namespace RealEstate.Dao.Context
 
                 entity.Property(e => e.SrvTelefonico).HasColumnName("srvTelefonico");
 
-                entity.HasOne(d => d.IdBarrioNavigation)
-                    .WithMany(p => p.Publicaciones)
-                    .HasForeignKey(d => d.IdBarrio)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Publicaciones_Direccion_Barrios");
 
-                entity.HasOne(d => d.IdMonedaNavigation)
-                    .WithMany(p => p.Publicaciones)
-                    .HasForeignKey(d => d.IdMoneda)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Publicaciones_Monedas");
 
-                entity.HasOne(d => d.IdPlanNavigation)
-                    .WithMany(p => p.Publicaciones)
-                    .HasForeignKey(d => d.IdPlan)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Publicaciones_Publicaciones_Planes");
 
-                entity.HasOne(d => d.IdTipoPropiedadNavigation)
-                    .WithMany(p => p.Publicaciones)
-                    .HasForeignKey(d => d.IdTipoPropiedad)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Publicaciones_TiposPropiedades");
 
-                entity.HasOne(d => d.IdUsuarioNavigation)
-                    .WithMany(p => p.Publicaciones)
-                    .HasForeignKey(d => d.IdUsuario)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Publicaciones_Usuarios");
             });
 
             modelBuilder.Entity<PublicacionesPlanes>(entity =>
@@ -432,11 +398,6 @@ namespace RealEstate.Dao.Context
                     .HasColumnName("whatsapp")
                     .HasMaxLength(20);
 
-                entity.HasOne(d => d.IdBarrioNavigation)
-                    .WithMany(p => p.Usuarios)
-                    .HasForeignKey(d => d.IdBarrio)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Usuarios_Direccion_Barrios");
             });
 
             OnModelCreatingPartial(modelBuilder);

@@ -41,10 +41,5 @@ namespace RealEstate.Models.Entity
         public string DirLongitud { get; set; }
         public string Descripcion { get; set; }
 
-        public virtual DireccionBarrios IdBarrioNavigation { get; set; }
-        public virtual Monedas IdMonedaNavigation { get; set; }
-        public virtual PublicacionesPlanes IdPlanNavigation { get; set; }
-        public virtual TiposPropiedades IdTipoPropiedadNavigation { get; set; }
-        public virtual Usuarios IdUsuarioNavigation { get; set; }
     }
 }
