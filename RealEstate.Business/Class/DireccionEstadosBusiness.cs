@@ -13,7 +13,7 @@ namespace RealEstate.Business.Class
             _direccionEstadosRepository = direccionEstadosRepository;
         }
 
-        public bool Delete(string id)
+        public bool Delete(int id)
         {
             return _direccionEstadosRepository.Delete(id);
         }
@@ -28,7 +28,7 @@ namespace RealEstate.Business.Class
             return _direccionEstadosRepository.GetAll();
         }
 
-        public DireccionEstados GetById(string id)
+        public DireccionEstados GetById(int id)
         {
             return _direccionEstadosRepository.GetById(id);
         }

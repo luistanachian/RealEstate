@@ -2,7 +2,7 @@
 
 namespace RealEstate.Repository.Interface
 {
-    public interface ITiposPropiedadesRepository : IBaseRepository<TiposPropiedades, string>
+    public interface ITiposPropiedadesRepository : IBaseRepository<TiposPropiedades, int>
     {
     }
 }

@@ -14,7 +14,7 @@ namespace RealEstate.Repository.Class
             _direccionEstadosDao = direccionEstadosDao;
         }
 
-        public bool Delete(string id)
+        public bool Delete(int id)
         {
             var rowsCount = _direccionEstadosDao.Delete(id);
             return rowsCount > 0;
@@ -28,7 +28,7 @@ namespace RealEstate.Repository.Class
             return _direccionEstadosDao.GetAll();
         }
 
-        public DireccionEstados GetById(string id)
+        public DireccionEstados GetById(int id)
         {
             return _direccionEstadosDao.GetById(id);
         }

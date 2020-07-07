@@ -2,7 +2,7 @@
 
 namespace RealEstate.Business.Interface
 {
-    public interface IMonedasBusiness : IBaseBusiness<Monedas, string>
+    public interface IMonedasBusiness : IBaseBusiness<Monedas, int>
     {
 
     }

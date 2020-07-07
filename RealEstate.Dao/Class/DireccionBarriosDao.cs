@@ -3,7 +3,7 @@ using RealEstate.Models.Entity;
 
 namespace RealEstate.Dao.Class
 {
-    public class DireccionBarriosDao : BaseDao<DireccionBarrios, string>, IDireccionBarriosDao 
+    public class DireccionBarriosDao : BaseDao<DireccionBarrios, int>, IDireccionBarriosDao 
     {
 
     }

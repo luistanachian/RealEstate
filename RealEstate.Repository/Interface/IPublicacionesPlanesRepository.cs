@@ -2,7 +2,7 @@
 
 namespace RealEstate.Repository.Interface
 {
-    public interface IPublicacionesPlanesRepository : IBaseRepository<PublicacionesPlanes, string>
+    public interface IPublicacionesPlanesRepository : IBaseRepository<PublicacionesPlanes, int>
     {
     }
 }

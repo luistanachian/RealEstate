@@ -3,7 +3,7 @@ using RealEstate.Models.Entity;
 
 namespace RealEstate.Dao.Class
 {
-    public class TiposPropiedadesDao : BaseDao<TiposPropiedades, string>, ITiposPropiedadesDao
+    public class TiposPropiedadesDao : BaseDao<TiposPropiedades, int>, ITiposPropiedadesDao
     {
     }
 }

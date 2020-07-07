@@ -4,9 +4,9 @@ using System.Collections.Generic;
 
 namespace RealEstate.Business.Interface
 {
-    public interface IDireccionLocalidadesBusiness : IBaseBusiness<DireccionLocalidades, string>
+    public interface IDireccionLocalidadesBusiness : IBaseBusiness<DireccionLocalidades, int>
     {
         IEnumerable<SearchItemModel> SearchLocalidades(string word);
-        IEnumerable<DireccionLocalidades> GetByIdEstado(string idEstado);
+        IEnumerable<DireccionLocalidades> GetByIdEstado(int idEstado);
     }
 }

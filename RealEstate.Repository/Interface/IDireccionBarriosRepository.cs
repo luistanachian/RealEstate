@@ -3,8 +3,8 @@ using System.Collections.Generic;
 
 namespace RealEstate.Repository.Interface
 {
-    public interface IDireccionBarriosRepository : IBaseRepository<DireccionBarrios, string>
+    public interface IDireccionBarriosRepository : IBaseRepository<DireccionBarrios, int>
     {
-        IEnumerable<DireccionBarrios> GetByIdLocalidad(string idLocalidad);
+        IEnumerable<DireccionBarrios> GetByIdLocalidad(int idLocalidad);
     }
 }

@@ -5,7 +5,7 @@ namespace RealEstate.Models.Entity
 {
     public partial class DireccionEstados
     {
-        public string IdEstado { get; set; }
+        public int IdEstado { get; set; }
         public string Estado { get; set; }
     }
 }

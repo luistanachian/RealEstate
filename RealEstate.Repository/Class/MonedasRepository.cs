@@ -12,11 +12,11 @@ namespace RealEstate.Repository.Class
         {
             _monedasDao = monedasDao;
         }
-        public Monedas GetById(string id)
+        public Monedas GetById(int id)
         {
             return _monedasDao.GetById(id);
         }
-        public bool Delete(string id)
+        public bool Delete(int id)
         {
             var rowsCount = _monedasDao.Delete(id);
             return rowsCount > 0;

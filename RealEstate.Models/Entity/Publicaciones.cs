@@ -7,10 +7,10 @@ namespace RealEstate.Models.Entity
     {
         public string IdPub { get; set; }
         public string IdUsuario { get; set; }
-        public string IdTipoPropiedad { get; set; }
-        public string IdPlan { get; set; }
-        public string IdBarrio { get; set; }
-        public string IdMoneda { get; set; }
+        public int IdTipoPropiedad { get; set; }
+        public int IdPlan { get; set; }
+        public int IdBarrio { get; set; }
+        public int IdMoneda { get; set; }
         public bool? CicloDiario { get; set; }
         public bool? CicloSemanal { get; set; }
         public bool? CicloMensual { get; set; }
@@ -40,6 +40,5 @@ namespace RealEstate.Models.Entity
         public string DirLatitud { get; set; }
         public string DirLongitud { get; set; }
         public string Descripcion { get; set; }
-
     }
 }

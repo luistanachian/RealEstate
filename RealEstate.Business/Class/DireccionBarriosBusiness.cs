@@ -14,7 +14,7 @@ namespace RealEstate.Business.Class
             _DireccionBarriosRepository = DireccionBarriosRepository;
         }
 
-        public bool Delete(string id)
+        public bool Delete(int id)
         {
             return _DireccionBarriosRepository.Delete(id);
         }
@@ -24,11 +24,11 @@ namespace RealEstate.Business.Class
             return _DireccionBarriosRepository.GetAll();
         }
 
-        public DireccionBarrios GetById(string id)
+        public DireccionBarrios GetById(int id)
         {
             return _DireccionBarriosRepository.GetById(id);
         }
-        public IEnumerable<DireccionBarrios> GetByIdLocalidad(string idLocalidad)
+        public IEnumerable<DireccionBarrios> GetByIdLocalidad(int idLocalidad)
         {
             return _DireccionBarriosRepository.GetByIdLocalidad(idLocalidad);
         }

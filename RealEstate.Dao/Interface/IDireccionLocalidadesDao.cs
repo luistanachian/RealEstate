@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace RealEstate.Dao.Interface
 {
-    public interface IDireccionLocalidadesDao : IBaseDao<DireccionLocalidades, string>
+    public interface IDireccionLocalidadesDao : IBaseDao<DireccionLocalidades, int>
     {
         IEnumerable<SearchItemModel> SearchLocalidades(string word, int top);
     }

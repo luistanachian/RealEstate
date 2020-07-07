@@ -42,20 +42,12 @@ namespace RealEstate.Dao.Context
 
                 entity.ToTable("Direccion_Barrios");
 
-                entity.Property(e => e.IdBarrio)
-                    .HasColumnName("idBarrio")
-                    .HasMaxLength(7);
+                entity.Property(e => e.IdBarrio).HasColumnName("idBarrio");
 
                 entity.Property(e => e.Barrio)
                     .IsRequired()
                     .HasColumnName("barrio")
-                    .HasMaxLength(50);
-
-                entity.Property(e => e.IdLocalidad)
-                    .IsRequired()
-                    .HasColumnName("idLocalidad")
-                    .HasMaxLength(5);
-
+                    .HasMaxLength(100);
             });
 
             modelBuilder.Entity<DireccionEstados>(entity =>
@@ -64,14 +56,12 @@ namespace RealEstate.Dao.Context
 
                 entity.ToTable("Direccion_Estados");
 
-                entity.Property(e => e.IdEstado)
-                    .HasColumnName("idEstado")
-                    .HasMaxLength(3);
+                entity.Property(e => e.IdEstado).HasColumnName("idEstado");
 
                 entity.Property(e => e.Estado)
                     .IsRequired()
                     .HasColumnName("estado")
-                    .HasMaxLength(50);
+                    .HasMaxLength(100);
             });
 
             modelBuilder.Entity<DireccionLocalidades>(entity =>
@@ -80,20 +70,14 @@ namespace RealEstate.Dao.Context
 
                 entity.ToTable("Direccion_Localidades");
 
-                entity.Property(e => e.IdLocalidad)
-                    .HasColumnName("idLocalidad")
-                    .HasMaxLength(5);
+                entity.Property(e => e.IdLocalidad).HasColumnName("idLocalidad");
 
-                entity.Property(e => e.IdEstado)
-                    .IsRequired()
-                    .HasColumnName("idEstado")
-                    .HasMaxLength(3);
+                entity.Property(e => e.IdEstado).HasColumnName("idEstado");
 
                 entity.Property(e => e.Localidad)
                     .IsRequired()
                     .HasColumnName("localidad")
-                    .HasMaxLength(50);
-
+                    .HasMaxLength(100);
 
             });
 
@@ -101,11 +85,7 @@ namespace RealEstate.Dao.Context
             {
                 entity.HasKey(e => e.IdMoneda);
 
-                entity.Property(e => e.IdMoneda)
-                    .HasColumnName("idMoneda")
-                    .HasMaxLength(1)
-                    .IsUnicode(false)
-                    .IsFixedLength();
+                entity.Property(e => e.IdMoneda).HasColumnName("idMoneda");
 
                 entity.Property(e => e.Moneda)
                     .IsRequired()
@@ -179,31 +159,13 @@ namespace RealEstate.Dao.Context
                     .HasColumnName("fechaVencimiento")
                     .HasColumnType("date");
 
-                entity.Property(e => e.IdBarrio)
-                    .IsRequired()
-                    .HasColumnName("idBarrio")
-                    .HasMaxLength(7);
+                entity.Property(e => e.IdBarrio).HasColumnName("idBarrio");
 
-                entity.Property(e => e.IdMoneda)
-                    .IsRequired()
-                    .HasColumnName("idMoneda")
-                    .HasMaxLength(1)
-                    .IsUnicode(false)
-                    .IsFixedLength();
+                entity.Property(e => e.IdMoneda).HasColumnName("idMoneda");
 
-                entity.Property(e => e.IdPlan)
-                    .IsRequired()
-                    .HasColumnName("idPlan")
-                    .HasMaxLength(1)
-                    .IsUnicode(false)
-                    .IsFixedLength();
+                entity.Property(e => e.IdPlan).HasColumnName("idPlan");
 
-                entity.Property(e => e.IdTipoPropiedad)
-                    .IsRequired()
-                    .HasColumnName("idTipoPropiedad")
-                    .HasMaxLength(1)
-                    .IsUnicode(false)
-                    .IsFixedLength();
+                entity.Property(e => e.IdTipoPropiedad).HasColumnName("idTipoPropiedad");
 
                 entity.Property(e => e.IdUsuario)
                     .IsRequired()
@@ -232,10 +194,6 @@ namespace RealEstate.Dao.Context
 
                 entity.Property(e => e.SrvTelefonico).HasColumnName("srvTelefonico");
 
-
-
-
-
             });
 
             modelBuilder.Entity<PublicacionesPlanes>(entity =>
@@ -244,11 +202,7 @@ namespace RealEstate.Dao.Context
 
                 entity.ToTable("Publicaciones_Planes");
 
-                entity.Property(e => e.IdPlan)
-                    .HasColumnName("idPlan")
-                    .HasMaxLength(1)
-                    .IsUnicode(false)
-                    .IsFixedLength();
+                entity.Property(e => e.IdPlan).HasColumnName("idPlan");
 
                 entity.Property(e => e.Descripcion)
                     .IsRequired()
@@ -287,11 +241,7 @@ namespace RealEstate.Dao.Context
             {
                 entity.HasKey(e => e.IdTipoPropiedad);
 
-                entity.Property(e => e.IdTipoPropiedad)
-                    .HasColumnName("idTipoPropiedad")
-                    .HasMaxLength(1)
-                    .IsUnicode(false)
-                    .IsFixedLength();
+                entity.Property(e => e.IdTipoPropiedad).HasColumnName("idTipoPropiedad");
 
                 entity.Property(e => e.TipoPropiedad)
                     .IsRequired()
@@ -363,10 +313,7 @@ namespace RealEstate.Dao.Context
                     .HasColumnName("emailContacto")
                     .HasMaxLength(50);
 
-                entity.Property(e => e.IdBarrio)
-                    .IsRequired()
-                    .HasColumnName("idBarrio")
-                    .HasMaxLength(7);
+                entity.Property(e => e.IdBarrio).HasColumnName("idBarrio");
 
                 entity.Property(e => e.Nombre)
                     .IsRequired()
@@ -397,6 +344,7 @@ namespace RealEstate.Dao.Context
                 entity.Property(e => e.Whatsapp)
                     .HasColumnName("whatsapp")
                     .HasMaxLength(20);
+
 
             });
 

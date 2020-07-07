@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace RealEstate.Dao.Class
 {
-    public class DireccionLocalidadesDao : BaseDao<DireccionLocalidades, string>, IDireccionLocalidadesDao
+    public class DireccionLocalidadesDao : BaseDao<DireccionLocalidades, int>, IDireccionLocalidadesDao
     {
         public IEnumerable<SearchItemModel> SearchLocalidades(string word, int top)
         {

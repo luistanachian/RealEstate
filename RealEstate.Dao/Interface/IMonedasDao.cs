@@ -2,7 +2,7 @@
 
 namespace RealEstate.Dao.Interface
 {
-    public interface IMonedasDao : IBaseDao<Monedas, string>
+    public interface IMonedasDao : IBaseDao<Monedas, int>
     {
     }
 }

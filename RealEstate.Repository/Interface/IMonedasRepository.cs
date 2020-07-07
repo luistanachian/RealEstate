@@ -2,7 +2,7 @@
 
 namespace RealEstate.Repository.Interface
 {
-    public interface IMonedasRepository : IBaseRepository<Monedas, string>
+    public interface IMonedasRepository : IBaseRepository<Monedas, int>
     {
 
     }

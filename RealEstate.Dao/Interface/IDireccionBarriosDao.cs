@@ -2,7 +2,7 @@
 
 namespace RealEstate.Dao.Interface
 {
-    public interface IDireccionBarriosDao : IBaseDao<DireccionBarrios, string>
+    public interface IDireccionBarriosDao : IBaseDao<DireccionBarrios, int>
     { 
 
     }

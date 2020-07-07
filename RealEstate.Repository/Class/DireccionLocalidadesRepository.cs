@@ -14,7 +14,7 @@ namespace RealEstate.Repository.Class
             _DireccionLocalidadesDao = DireccionLocalidadesDao;
         }
 
-        public bool Delete(string id)
+        public bool Delete(int id)
         {
             var rowsCount = _DireccionLocalidadesDao.Delete(id);
             return rowsCount > 0;
@@ -29,12 +29,12 @@ namespace RealEstate.Repository.Class
             return _DireccionLocalidadesDao.GetAll();
         }
 
-        public DireccionLocalidades GetById(string id)
+        public DireccionLocalidades GetById(int id)
         {
             return _DireccionLocalidadesDao.GetById(id);
         }
 
-        public IEnumerable<DireccionLocalidades> GetByIdEstado(string idEstado)
+        public IEnumerable<DireccionLocalidades> GetByIdEstado(int idEstado)
         {
             return _DireccionLocalidadesDao.GetListByFunc(e => e.IdEstado == idEstado);
         }

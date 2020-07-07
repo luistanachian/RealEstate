@@ -14,7 +14,7 @@ namespace RealEstate.Business.Class
             _DireccionLocalidadesRepository = DireccionLocalidadesRepository;
         }
 
-        public bool Delete(string id)
+        public bool Delete(int id)
         {
             return _DireccionLocalidadesRepository.Delete(id);
         }

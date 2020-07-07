@@ -4,7 +4,7 @@ namespace RealEstate.Repository.Interface
 {
     public interface IBaseRepository<TEntity, TId>
         where TEntity : class
-        where TId : class
+        where TId : notnull
     {
         IEnumerable<TEntity> GetAll();
         TEntity GetById(TId id);

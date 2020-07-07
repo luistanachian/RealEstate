@@ -8,7 +8,7 @@ namespace RealEstate.Dao.Class
 {
     public class BaseDao<TEntity, TId> : IBaseDao<TEntity, TId> 
         where TEntity : class
-        where TId : class
+        where TId : notnull
     {
         public IEnumerable<TEntity> GetAll()
         {

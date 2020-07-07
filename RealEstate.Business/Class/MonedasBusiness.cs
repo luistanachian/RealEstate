@@ -13,7 +13,7 @@ namespace RealEstate.Business.Class
             _monedasRepository = monedasRepository;
         }
 
-        public bool Delete(string id)
+        public bool Delete(int id)
         {
             return _monedasRepository.Delete(id);
         }
@@ -22,7 +22,7 @@ namespace RealEstate.Business.Class
         {
             return _monedasRepository.GetAll();
         }
-        public Monedas GetById(string id)
+        public Monedas GetById(int id)
         {
             return _monedasRepository.GetById(id);
         }

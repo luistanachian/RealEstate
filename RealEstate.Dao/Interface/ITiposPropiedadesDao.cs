@@ -2,7 +2,7 @@
 
 namespace RealEstate.Dao.Interface
 {
-    public interface ITiposPropiedadesDao : IBaseDao<TiposPropiedades, string>
+    public interface ITiposPropiedadesDao : IBaseDao<TiposPropiedades, int>
     {
     }
 }

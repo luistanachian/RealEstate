@@ -5,7 +5,7 @@ namespace RealEstate.Models.Entity
 {
     public partial class PublicacionesPlanes
     {
-        public string IdPlan { get; set; }
+        public int IdPlan { get; set; }
         public string Nombre { get; set; }
         public string Descripcion { get; set; }
         public string Visibilidad { get; set; }

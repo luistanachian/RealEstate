@@ -3,8 +3,8 @@ using System.Collections.Generic;
 
 namespace RealEstate.Business.Interface
 {
-    public interface IDireccionBarriosBusiness : IBaseBusiness<DireccionBarrios, string>
+    public interface IDireccionBarriosBusiness : IBaseBusiness<DireccionBarrios, int>
     {
-        IEnumerable<DireccionBarrios> GetByIdLocalidad(string idLocalidad);
+        IEnumerable<DireccionBarrios> GetByIdLocalidad(int idLocalidad);
     }
 }

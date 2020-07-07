@@ -6,7 +6,7 @@ namespace RealEstate.Models.Entity
     public partial class Usuarios
     {
         public string IdUsuario { get; set; }
-        public string IdBarrio { get; set; }
+        public int IdBarrio { get; set; }
         public string Email { get; set; }
         public string Clave { get; set; }
         public bool Dueño { get; set; }

@@ -4,9 +4,9 @@ using System.Collections.Generic;
 
 namespace RealEstate.Repository.Interface
 {
-    public interface IDireccionLocalidadesRepository : IBaseRepository<DireccionLocalidades, string>
+    public interface IDireccionLocalidadesRepository : IBaseRepository<DireccionLocalidades, int>
     {
-        IEnumerable<DireccionLocalidades> GetByIdEstado(string idEstado);
+        IEnumerable<DireccionLocalidades> GetByIdEstado(int idEstado);
         IEnumerable<SearchItemModel> SearchLocalidades(string word, int top);
     }
 }

@@ -4,7 +4,7 @@ namespace RealEstate.Business.Interface
 {
     public interface IBaseBusiness<TEntity, TId>
         where TEntity : class
-        where TId : class
+        where TId : notnull
     {
         TEntity GetById(TId id);
         IEnumerable<TEntity> GetAll();
