@@ -44,7 +44,7 @@ namespace RealEstate.MVC.Controllers.CUD
         }
         [Route("state/{id}")]
         [HttpDelete]
-        public IActionResult EstadosDelete(string id)
+        public IActionResult EstadosDelete(int id)
         {
             var guardado = _direccionEstadosBusiness.Delete(id);
             if (guardado)
@@ -80,7 +80,7 @@ namespace RealEstate.MVC.Controllers.CUD
         }
         [Route("location/{id}")]
         [HttpDelete]
-        public IActionResult LocalidadesDelete(string id)
+        public IActionResult LocalidadesDelete(int id)
         {
             var guardado = _direccionLocalidadesBusiness.Delete(id);
             if (guardado)
@@ -116,7 +116,7 @@ namespace RealEstate.MVC.Controllers.CUD
         }
         [Route("district/{id}")]
         [HttpDelete]
-        public IActionResult BarriosDelete(string id)
+        public IActionResult BarriosDelete(int id)
         {
             var guardado = _direccionBarriosBusiness.Delete(id);
             if (guardado)

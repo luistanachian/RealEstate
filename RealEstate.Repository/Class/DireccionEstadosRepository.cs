@@ -1,4 +1,5 @@
 ﻿using RealEstate.Dao.Interface;
+using RealEstate.Models.Common;
 using RealEstate.Models.Entity;
 using RealEstate.Repository.Interface;
 using System.Collections.Generic;
@@ -19,9 +20,11 @@ namespace RealEstate.Repository.Class
             var rowsCount = _direccionEstadosDao.Delete(id);
             return rowsCount > 0;
         }
-        public IEnumerable<DireccionEstados> SearchEstate(string word, int top)
+        public IEnumerable<SearchItemModel> SearchEstate(string word, int top)
         {
-            return _direccionEstadosDao.GetListByFunc(e => e.Estado.ToLower().Contains(word.ToLower()), top);
+            var estados = _direccionEstadosDao.GetListByFunc(e => e.Estado.ToLower().Contains(word.ToLower()), top);
+            var searchitemmodel = estados.Select(e => new SearchItemModel { Id = e.IdEstado, Texto = e.Estado }).ToList();
+            return searchitemmodel;
         }
         public IEnumerable<DireccionEstados> GetAll()
         {

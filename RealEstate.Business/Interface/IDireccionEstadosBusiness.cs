@@ -1,10 +1,11 @@
-﻿using RealEstate.Models.Entity;
+﻿using RealEstate.Models.Common;
+using RealEstate.Models.Entity;
 using System.Collections.Generic;
 
 namespace RealEstate.Business.Interface
 {
     public interface IDireccionEstadosBusiness : IBaseBusiness<DireccionEstados, int>
     {
-        IEnumerable<DireccionEstados> SearchEstate(string word);
+        IEnumerable<SearchItemModel> SearchEstate(string word);
     }
 }

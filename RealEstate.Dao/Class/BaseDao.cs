@@ -37,7 +37,7 @@ namespace RealEstate.Dao.Class
             {
                 var result = db.Set<TEntity>().Where(conditionLambda);
                 if (top > 0)
-                    return result.Take(top);
+                    return result.Take(top).ToList();
 
                 return result.ToList();
             }

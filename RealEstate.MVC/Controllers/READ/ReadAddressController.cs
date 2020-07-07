@@ -46,7 +46,7 @@ namespace RealEstate.MVC.Controllers.READ
         }
         [Route("state/{id}")]
         [HttpGet]
-        public IActionResult EstadosGetById(string id)
+        public IActionResult EstadosGetById(int id)
         {
             var estado = _direccionEstadosBusiness.GetById(id);
             if (estado != null)
@@ -71,7 +71,7 @@ namespace RealEstate.MVC.Controllers.READ
         }
         [Route("location/idstate/{idstate}")]
         [HttpGet]
-        public IActionResult LocalidadesGetByIdPais(string idstate)
+        public IActionResult LocalidadesGetByIdPais(int idstate)
         {
             var localidades = _direccionLocalidadesBusiness.GetByIdEstado(idstate);
             if (localidades != null && localidades.Count() > 0)
@@ -81,7 +81,7 @@ namespace RealEstate.MVC.Controllers.READ
         }
         [Route("location/{id}")]
         [HttpGet]
-        public IActionResult LocalidadesGetById(string id)
+        public IActionResult LocalidadesGetById(int id)
         {
             var estado = _direccionLocalidadesBusiness.GetById(id);
             if (estado != null)
@@ -96,7 +96,7 @@ namespace RealEstate.MVC.Controllers.READ
 
         [Route("district/idlocation/{idlocation}")]
         [HttpGet]
-        public IActionResult BarriosGetByIdLocalidad(string idlocation)
+        public IActionResult BarriosGetByIdLocalidad(int idlocation)
         {
             var estados = _direccionBarriosBusiness.GetByIdLocalidad(idlocation);
             if (estados != null && estados.Count() > 0)
@@ -106,7 +106,7 @@ namespace RealEstate.MVC.Controllers.READ
         }
         [Route("district/{id}")]
         [HttpGet]
-        public IActionResult BarriosGetById(string id)
+        public IActionResult BarriosGetById(int id)
         {
             var estado = _direccionBarriosBusiness.GetById(id);
             if (estado != null)

@@ -25,7 +25,7 @@ namespace RealEstate.MVC.Controllers.READ
 
         [HttpGet]
         [Route("{id}")]
-        public IActionResult GetById(string id)
+        public IActionResult GetById(int id)
         {
             var moneda = _monedasBusiness.GetById(id);
             if (moneda != null)

@@ -28,11 +28,11 @@ namespace RealEstate.Business.Class
             return _DireccionLocalidadesRepository.GetAll();
         }
 
-        public DireccionLocalidades GetById(string id)
+        public DireccionLocalidades GetById(int id)
         {
             return _DireccionLocalidadesRepository.GetById(id);
         }
-        public IEnumerable<DireccionLocalidades> GetByIdEstado(string idEstado)
+        public IEnumerable<DireccionLocalidades> GetByIdEstado(int idEstado)
         {
             return _DireccionLocalidadesRepository.GetByIdEstado(idEstado);
         }

@@ -18,8 +18,7 @@ namespace RealEstate.Dao.Class
                                   where 
                                       lo.Localidad.Contains(word) 
                                       || es.Estado.Contains(word) ||
-                                      (lo.Localidad + " " + es.Estado).Contains(word) ||
-                                      (es.Estado + " " + lo.Localidad).Contains(word)
+                                      (lo.Localidad + " " + es.Estado).Contains(word) 
                              select new SearchItemModel
                                   {
                                       Id = lo.IdLocalidad, 

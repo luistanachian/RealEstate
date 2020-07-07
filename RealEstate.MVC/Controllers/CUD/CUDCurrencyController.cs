@@ -34,7 +34,7 @@ namespace RealEstate.MVC.Controllers.CUD
         }
         [HttpDelete]
         [Route("{id}")]
-        public IActionResult Delete(string id)
+        public IActionResult Delete(int id)
         {
             var guardado = _monedasBusiness.Delete(id);
             if (guardado)
